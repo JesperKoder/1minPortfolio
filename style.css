@@ -4,8 +4,12 @@
   padding: 0;
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-image: url(unsplash_Il12wEsns74.png);
   background-position: contain;
   /* resize: both; */
@@ -105,6 +109,9 @@ main {
   flex-direction: column;
 }
 
+.project-picture {
+}
+
 /* FOOTER FOR CONTACT  */
 footer {
   color: #969696;
@@ -130,7 +137,7 @@ form > input {
   outline: none;
   background-color: transparent;
   width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   padding: 5px;
 }
 
