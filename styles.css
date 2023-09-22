@@ -71,6 +71,13 @@ body {
   background-color: #3e8e41;
 }
 
+/* Title */
+.title {
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
 /* HEADER/ABOUT ME */
 header {
   background-color: #333;
@@ -83,11 +90,9 @@ header {
   height: 100vh;
 }
 
-.pic-div { 
+.pic-div {
   border: 1px solid white;
 }
-
-
 
 /* MAIN/PROJECTS */
 main {
@@ -102,6 +107,12 @@ main {
 
 .project {
   margin: 10px auto;
+}
+
+.project-picture {
+  width: 25%;
+  height: 25%;
+  max-width: 1000px;
 }
 
 /* FOOTER FOR CONTACT  */
@@ -132,6 +143,7 @@ form > input {
   width: 100%;
   font-size: 1rem;
   padding: 5px;
+  margin: 10px 0;
 }
 
 form > button {
@@ -149,11 +161,6 @@ form > button {
   text-align: center;
 }
 
-
-
-
-
-
 /* Media query for small tablets */
 @media screen and (min-width: 620px) {
   body {
@@ -163,14 +170,21 @@ form > button {
   header {
     padding: 30px;
   }
+
 }
 
 /* Media query for larger tablets and laptops */
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 30px;
+  }
 
 }
 
 /* Media query for desktops */
 @media screen and (min-width: 1200px) {
-  
 }

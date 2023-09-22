@@ -112,6 +112,10 @@ main {
 .project-picture {
 }
 
+img {
+  width: 20%;
+}
+
 /* FOOTER FOR CONTACT  */
 footer {
   color: #969696;
