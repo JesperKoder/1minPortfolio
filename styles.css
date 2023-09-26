@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 16px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +13,10 @@ html {
 body {
   font-family: "Inter", sans-serif;
   background-color: #f0f0f0;
+}
+
+p, input, button {
+  font-size: 0.8rem;
 }
 
 /* NAVBAR/MENU */
@@ -78,13 +78,13 @@ body {
 /* Title */
 .title {
   text-align: center;
-  background-color: #333;
+  background-color: rgb(75, 75, 75);
   color: white;
 }
 
 /* HEADER/ABOUT ME */
 header {
-  background-color: #333;
+  background-color: rgb(75, 75, 75);
   color: #fff;
   padding: 2%;
   display: flex;
@@ -96,11 +96,19 @@ header {
 
 .header-div {
   border: 1px solid white;
-  width: 30%;
+  width: 100%;
 }
 
 .pic-div {
   border: 1px solid white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.pic-div > img {
+  width: 80%;
+
 }
 
 /* MAIN/PROJECTS */
@@ -150,7 +158,7 @@ form > input {
   outline: none;
   background-color: transparent;
   width: 100%;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   padding: 5px;
   margin: 10px 0;
 }
@@ -172,32 +180,28 @@ form > button {
 
 /* Media query for small tablets */
 @media screen and (min-width: 620px) {
-  body {
-    font-size: 18px;
-  }
-
+p, input, button {
+  font-size: 0.9rem;
+}
+.header-div {
+  border: 1px solid white;
+  width: 100%;
+}
   header {
     padding: 30px;
   }
 }
 
-/* Media query for larger tablets and laptops */
-@media screen and (min-width: 960px) {
-  body {
-    font-size: 20px;
-  }
-
-  header {
-    padding: 2%;
-  }
-}
 
 /* Media query for desktops */
-@media screen and (min-width: 1020px) {
-  body {
-    font-size: 22px;
-  }
-
+@media screen and (min-width: 960px) {
+p, input, button {
+  font-size: 1.2rem;
+}
+.header-div {
+  border: 1px solid white;
+  width: 30%;
+}
 header {
   flex-direction: row;
 }
