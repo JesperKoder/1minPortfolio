@@ -15,7 +15,9 @@ body {
   background-color: #f0f0f0;
 }
 
-p, input, button {
+p,
+input,
+button {
   font-size: 0.8rem;
 }
 
@@ -108,7 +110,6 @@ header {
 
 .pic-div > img {
   width: 80%;
-
 }
 
 /* MAIN/PROJECTS */
@@ -180,44 +181,44 @@ form > button {
 
 /* Media query for small tablets */
 @media screen and (min-width: 620px) {
-p, input, button {
-  font-size: 0.9rem;
-}
-.header-div {
-  border: 1px solid white;
-  width: 100%;
-}
+  p,
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+  .header-div {
+    border: 1px solid white;
+    width: 100%;
+  }
   header {
     padding: 30px;
   }
 }
 
-
 /* Media query for desktops */
 @media screen and (min-width: 960px) {
-p, input, button {
-  font-size: 1.2rem;
-}
-.header-div {
-  border: 1px solid white;
-  width: 30%;
-}
-header {
-  flex-direction: row;
-}
+  p,
+  input,
+  button {
+    font-size: 1.2rem;
+  }
+  .header-div {
+    border: 1px solid white;
+    width: 30%;
+  }
+  header {
+    flex-direction: row;
+  }
 
-.pic-div {
-  order: 2;
-  
-}
+  .pic-div {
+    order: 2;
+  }
 
-.right-div {
-  order: 3;
-}
+  .right-div {
+    order: 3;
+  }
 
-.left-div {
-  order: 1;
-}
-
-
+  .left-div {
+    order: 1;
+  }
 }
