@@ -91,6 +91,7 @@ header {
   padding: 2%;
   display: flex;
   flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
@@ -111,10 +112,12 @@ header {
   width: 30%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .pic-div > img {
-  width: 60%;
+  max-width: 60%;
+  height: auto;
 }
 
 /* MAIN/PROJECTS */
@@ -213,18 +216,18 @@ form > button {
     width: 30%;
   }
   header {
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
   .pic-div {
-    order: 2;
+    /* order: 2; */
   }
 
   .right-div {
-    order: 3;
+    /* order: 3; */
   }
 
   .left-div {
-    order: 1;
+    /* order: 1; */
   }
 }
